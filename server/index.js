@@ -15,8 +15,8 @@ const db = require('./dbconnection');
 
 db.connect((err) => {
   err
-    ? console.log('Database Connection Failed')
-    : console.log('Database Connection Successful');
+    ? console.err('Database Connection Failed')
+    : console.err('Database Connection Successful');
 });
 /* end database connection*/
 

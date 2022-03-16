@@ -19,12 +19,8 @@ export class TutorialComponent implements OnInit {
       if (res.status === false) {
         this.errmsgshow = true;
         this.errmsg = 'Access Denied';
-        console.log(this.errmsg);
-        
       } else {
         this.data = res.data;
-        console.log(this.data);
-        
       }
     });
   }
