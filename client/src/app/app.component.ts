@@ -8,7 +8,6 @@ import { ApiserviceService } from './users/apiservice.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'frontend';
   showmenu = false;
   constructor(private service: ApiserviceService, private router: Router) {}
   token = this.service.getToken();
